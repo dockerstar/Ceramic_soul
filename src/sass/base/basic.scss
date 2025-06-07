@@ -45,3 +45,24 @@ body {
     width: 100%;
     padding: 0 10px;
 }
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 0 24px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 100%;
+		padding: 0 40px;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.container {
+		width: 100%;
+		padding: 0 250px;
+	}
+}
