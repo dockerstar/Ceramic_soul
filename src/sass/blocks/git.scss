@@ -1,0 +1,73 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.git {
+    padding-top: 60px;
+    &__wrapper {
+        margin-top: 59px;
+        &_col {
+            width: 340px;
+            height: 428px;
+            &-img {
+                display: none;
+            }
+        }
+        &_hidden {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .git {
+        &__wrapper {
+            margin-top: 45px;
+            &_col {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                width: 696px;
+                height: 428px;
+                &-img {
+                    position: absolute;
+                    display: block;
+                    right: -24px;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .git {
+        &__wrapper {
+            margin-top: 80px;
+            column-gap: 40px;
+            &_col {
+                width: 520px;
+                height: 428px;
+                margin: 0;
+            }
+            &_hidden {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .git {
+        padding-top: 100px;
+        &__wrapper {
+            column-gap: 147px;
+            &_col {
+                width: 645px;
+                height: 356px;
+                margin: 0 auto;
+            }
+            &_hidden {
+                display: block;
+            }
+        }
+    }
+}
