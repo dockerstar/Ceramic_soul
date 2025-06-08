@@ -21,5 +21,8 @@
     "url": "https://github.com/dockerstar/Ceramic_soul/issues"
   },
   "homepage": "https://github.com/dockerstar/Ceramic_soul#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "purecss": "^3.0.0"
+  }
 }
