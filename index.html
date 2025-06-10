@@ -78,9 +78,25 @@
 					</div>
 					<div class="pure-u-1 pure-u-lg-1-2 pure-u-xxl-3-5 git__wrapper_col">
 						<form action="#">
-							
+							<fieldset class="git__fieldset">
+								<div class="git__input-block">
+									<label class="git__label" for="name">Name</label>
+									<input required class="git__input" type="text" id="name" name="name" placeholder="Name">
+								</div>
+								<div class="git__input-block">
+									<label class="git__label" for="email">Email</label>
+									<input required class="git__input" type="email" id="email" name="email" placeholder="Email">
+								</div>
+							</fieldset>
+							<label class="git__label" for="question">Your question</label>
+							<textarea required class="git__textarea" name="question" id="question" placeholder="Question"></textarea>
+							<label class="git__label git__check-block" for="checkbox">
+								<input required class="git__checkbox" type="checkbox" id="checkbox">
+								I agree with the <a href="#">terms</a>
+							</label>
+							<button class="btn-send git__btn">send request</button>
+							<img src="/src/img/form/vase.png" alt="vase" class="git__wrapper_col-img">
 						</form>
-						<img src="/src/img/form/vase.png" alt="vase" class="git__wrapper_col-img">
 					</div>
 				</div>
 			</div>

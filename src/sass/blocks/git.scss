@@ -5,7 +5,7 @@
     &__wrapper {
         margin-top: 59px;
         &_col {
-            width: 340px;
+            width: 100%;
             height: 428px;
             &-img {
                 display: none;
@@ -14,6 +14,74 @@
         &_hidden {
             display: none;
         }
+    }
+    &__fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__label {
+        display: block;
+        color: $dark;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        &:nth-child(2) {
+            margin-top: 8px;
+        }
+    }
+    &__input {
+        width: 100%;
+        padding: 9px 15px;
+        height: 48px;
+        border: 1px solid rgb(226, 225, 229);
+        border-radius: 2px;
+        background: rgb(255, 255, 255);
+        &:focus {
+            border: none;
+            outline: 1px solid $dark;
+        }
+        &::placeholder {
+            color: $ui-disabled;
+        }
+    }
+    &__textarea {
+        width: 100%;
+        height: 132px;
+        padding: 9px 15px;
+        border: 1px solid rgb(226, 225, 229);
+        border-radius: 2px;
+        background: rgb(255, 255, 255);
+        resize: none;
+        &:focus {
+            border: none;
+            outline: 1px solid $dark;
+        }
+        &::placeholder {
+            color: $ui-disabled;
+        }
+    }
+    &__check-block {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        a {
+            color: rgb(162, 45, 198);
+            text-decoration: none;
+            margin-left: 3px;
+        }
+    }
+    &__checkbox {
+        width: 15px;
+        height: 15px;
+        margin-right: 15px;
+    }
+    &__btn {
+        margin-top: 20px;
     }
 }
 
@@ -35,6 +103,9 @@
                 }
             }
         }
+        form {
+            width: 300px;
+        }
     }
 }
 
@@ -52,8 +123,21 @@
                 display: block;
             }
         }
+        &__input {
+            &:hover {
+                border: none;
+                outline: 1px solid $dark;
+            }
+        }
+        &__textarea {
+             &:hover {
+                border: none;
+                outline: 1px solid $dark;
+            }
+        }
     }
 }
+
 
 @media screen and (min-width: 1920px) {
     .git {
@@ -61,13 +145,30 @@
         &__wrapper {
             column-gap: 147px;
             &_col {
-                width: 645px;
                 height: 356px;
-                margin: 0 auto;
+                margin: 0 0 0 0;
+                &-img {
+                    right: -150px;
+                }
             }
             &_hidden {
                 display: block;
             }
+        }
+        &__fieldset {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 45px;
+        }
+        &__input {
+            width: 300px;
+        }
+        &__textarea {
+            width: 300px;
+        }
+        form {
+            width: 645px;
         }
     }
 }

@@ -9,6 +9,22 @@
     background-color: transparent;
 }
 
+.btn-send {
+    @include button;
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+    background-color: transparent;
+    &:focus {
+        outline: 1px solid $Ceramic;
+        border: 1px solid $Ceramic;
+    }
+    &:disabled {
+        outline: 1px solid $ui-disabled;
+        border: 1px solid $ui-disabled;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .btn-default {
         transition: 0.5s all;
@@ -21,6 +37,16 @@
             background: rgba(217, 217, 217, 0.1);
             color: rgb(35, 35, 35);
             border: none;
+        }
+    }
+    .btn-send {
+        &:active {
+            outline: 1px solid $Ceramic;
+            border: 1px solid $Ceramic;
+        }
+        &:hover {
+            color: $Ceramic;
+            border: 1px solid $Ceramic;
         }
     }
 }
