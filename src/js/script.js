@@ -14,11 +14,11 @@ const swiper = new Swiper('.swiper', {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-      },
+    },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+        nextEl: ".icon-right-open",
+        prevEl: ".icon-left-open",
+    },
     breakpoints: {
         // when window width is >= 320px
         1200: {
