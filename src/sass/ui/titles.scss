@@ -1,4 +1,5 @@
 @use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
 
 .title-h1-italic {
     @include title;
@@ -15,6 +16,19 @@
 .title-h3 {
     @include title;  
     font-size: 20px;
+}
+
+.title-h3-footer {
+    @include title; 
+    text-align: left;
+    font-size: 16px;
+    color: $Light;
+    &-link{
+        color: $Light;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: none;
+    }
 }
 
 
