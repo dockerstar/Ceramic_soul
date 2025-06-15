@@ -2,11 +2,14 @@
 
 .down {
     background-color: $dark;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 50px;
     form {
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+    &__label {
+        display: block;
     }
     &__btn {
         margin-top: 20px;
@@ -69,6 +72,7 @@
         }
     }
     &__follows {
+        width: 92px;
         &-icons {
             display: flex;
             margin: 40px 0 0 0;
@@ -82,5 +86,14 @@
     &__copy {
         margin-top: 40px;
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .down {
+        padding-top: 80px;
+        &__wrapper {
+            justify-content: space-between;
+        }
     }
 }
