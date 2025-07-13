@@ -76,7 +76,23 @@
     }
 }
 
+.decoration {
+        display: none;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        right: 520px;
+        top: 0;
+        bottom: 675px;
+        border-left: 1px solid $dark;
+        border-top: 1px solid $dark;
+    }
+
 @media screen and (min-width: 768px) {
+    .decoration {
+        display: block;
+    }
     .catalog {
         &__tabs {
             width: 465px;
@@ -95,17 +111,7 @@
             }
         }
     }
-    .decoration {
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        left: 0;
-        right: 520px;
-        top: 0;
-        bottom: 675px;
-        border-left: 1px solid $dark;
-        border-top: 1px solid $dark;
-    }
+    
 }
 
 @media screen and (min-width: 1200px) {

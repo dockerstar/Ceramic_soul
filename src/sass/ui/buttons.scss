@@ -25,6 +25,24 @@
     }
 }
 
+.btn-read  {
+    @include button;
+    width: 145px;
+    height: 32px;
+    font-size: 14px;
+    padding: 7px;
+    background-color: transparent;
+    &:hover {
+        outline: 1px solid $Ceramic;
+        border: 1px solid $Ceramic;
+        color: $Ceramic;
+    }
+    &:focus {
+        outline: 1px solid $Ceramic;
+        border: 1px solid $Ceramic;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .btn-default {
         transition: 0.5s all;
